@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    size: .5em;
+  }
+  #heading {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  
+  #top-of-page {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: .9rem;
+    width:100%;
+  }
+  #sort-field {
+    display: none;
+  }
+  @media (min-height: 900px) {
+  @media (min-width: 576px) {
+    body {
+      background-color: rgba(0, 0, 0, 0.911);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      size: 1em;
+    }
+    #heading {
+      font-size: 3.5rem;
+    }
+    #top-of-page {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      width:90%;
+    }
+  }
+  
+  #sort-field {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+    /* width: 300px; */
+  }
+    
+  }
+  .background-img {
+    background-image: url("images/pexels-vova-krasilnikov-2796145.jpg");
+  }
+  #top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #090808ed;
+    top: 0;
+  }
+  #search-field {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* align-content: center; */
+  }
+  #search-terms {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  
+  #selector {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  #selector input {
+    margin-left: 9px;
+  }
+  #selector label, #sort-field label {
+    margin-left: 5px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+  }
+  
+  #submit {
+    margin-left: 25px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family:futura;
+    width: 85px;
+    background-color: black;
+    color: white;
+  }
+  
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  #keyword, #sort-options {
+    font-size: 1rem;
+    padding-right: 5px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 20px;
+    /* width: 240px; */
+    background-color: rgb(239,239,239);
+    background-color: white;
+    background-color: black;
+      color: white;
+      color: -internal light dark(white,black);
+  }
+  
+  #media-player {
+    display: flex;
+    justify-content: center;
+    /* make adjustable for view width */
+    /* margin-left: 70px; */
+    /* width: 500px; */
+    /* margin-left: 100px; */
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  audio {
+    display: flex;
+    justify-content: center;
+    height: 33px;
+    width: 250px;
+  }
+  
+  #song, #artist, #album, #all {
+    display: flex;
+    font-size: 1rem;
+  }
+  #card-holder {
+    background-color: rgba(39, 38, 38, 0.85);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 232px;
+    color: white;
+  }
+  
+  #fixed-footer {
+    bottom: 0;
+  }
+  .card {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 4px solid #151211;
+    margin: 35px 15px 0px 15px;
+    border-radius: 15px;
+  }
+  .title, .collection, .artist-name {
+    display: flex;
+    flex-wrap: wrap;
+    color: #dbd8bc;
+    font-size: 1rem;
+    font-family: 'Futura';
+    margin-left: 5px;
+    margin-right: 8px;
+  }
+  .collection {
+    font-size: .8rem;
+    color: #a5a5a3;
+    margin-bottom: 4px;
+  }
+  .artist-name {      
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: 600;
+    color: #f7f1a8f5;
+  }
+  .title {
+    margin-top: 8px;
+    margin-bottom: 3px;
+  }
+  .image-div {
+    display: flex;
+    margin-right: 5px;
+    justify-content: flex-end;
+  }
+  .card:hover {
+    border: solid 4px #f8f4c4ad;
+  }
+  
+  img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .title-playing {
+    overflow: hidden;
+    position: relative;
+    color: whitesmoke;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .artist-playing {      
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: 600;
+    color: #f7f1a8f5;
+  }
+  
+  .now-playing {
+  color: #dbd8bc;
+  font-size: 1rem;
+  font-family: 'Futura';
+  }
+  
+  .title-playing p {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+    font-weight: 400;
+    text-align: center;
+    color: whitesmoke;
+    /* Starting position */
+    transform:translateX(-100%);
+    /* Apply animation to this element */	
+    animation: scroll-right 7s linear infinite;
+    color: #dbd8bc;
+  }
+   /* Move it (define the animation) */
+  @keyframes scroll-right {
+    0%   { 
+    transform: translateX(-100%); 		
+    }
+    100% { 
+    transform: translateX(100%); 
+    }
+  }
+  .hideme {
+    display: none;
+
